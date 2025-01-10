@@ -1,0 +1,57 @@
+# Dependency directories
+node_modules/            # Node.js dependencies (if using npm or yarn)
+
+# Build and output directories
+dist/                    # Production build directory
+build/                   # Alternate build directory
+
+# Static asset cache
+*.cache/
+.cache/
+
+# Logs and temporary files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+*.swp
+
+# IDE and editor specific files
+.vscode/                 # Visual Studio Code settings
+.idea/                   # IntelliJ IDEA project settings
+*.sublime-workspace      # Sublime Text workspace settings
+*.sublime-project
+
+# Operating system files
+.DS_Store                # macOS system files
+Thumbs.db                # Windows thumbnail cache
+desktop.ini              # Windows desktop configuration
+
+# Environmental files
+.env                     # Environment variables
+.env.*                   # All other environment files
+.secret                  # Any custom secret file
+
+# Git specific
+.git/                    # The .git folder itself
+.gitignore               # Ignore the gitignore file (optional)
+
+# Build tools and test outputs
+coverage/                # Test coverage results
+*.map                    # Source maps
+.cache-loader/           # Caching for loaders (like webpack)
+*.min.*                  # Minified files
+
+# Image and font optimizations
+*.optimized/             # Optimized images directory (optional)
+*.webp
+
+# Temporary files and backups
+*.bak                    # Backup files
+*.orig                   # Conflict resolution files
+*.tmp
+*.pid
+*.seed                   # Temporary seed files
+*.lock                   # Lock files
