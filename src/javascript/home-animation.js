@@ -11,8 +11,8 @@ menu_icon.addEventListener("click", () => {
 
 // For closing the menu bar
 exit.addEventListener("click", () => {
-  animateMenu( 0 , 130);
-  // menu.style.display = "none"; // Hide the menu
+  // animateMenu( 0 , 130);
+  menu.style.display = "none"; // Hide the menu
  
 });
 

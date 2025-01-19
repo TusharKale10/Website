@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stes Robotics</title>
     <link rel="stylesheet" href="src/style/home.css" />
+    <link rel="stylesheet" href="src/style/mediaquery.css">
   </head>
   <body>
     <!-- NAVBAR SECTION -->
     <nav class="navbar">
       <div class="header-left">
         <div class="box">
-          <img  src="src/Assets/stes-logo/Stes-logo.jpeg" alt="stes_logo" />
+          <img id="stes-logo" style="width: 13vw; height: auto;" src="src/Assets/stes-logo/Stes-logo.jpeg" alt="stes_logo" />
         </div>
         <div class="box">
-          <img style="width: 120px; height: 90px;" src="src/Assets/Partnership Logos/Sinhgad Institute Logo.png" alt="sinhgad_logo" />
+          <img     src="src/Assets/Partnership Logos/Sinhgad Institute Logo.png" alt="sinhgad_logo" />
         </div>
       </div>
-      <div class="header-right">
-        <div  class="box">
-          <a style="color: white;" href="index.html">Home</a></div>
-        <div class="box">
-          <a href="">Join Us</a></div>
+
+      <!-- MENU FOR MOBILE -->
+       <div id="hidden-header" class="hidden-header-right">
+
         <div id="menu-icon" class="menu-icon">
           <img src="src/Assets/other-icons/menu.png" alt="menu">
         </div>
+      
         <div id="hidden-menu" class="hidden-menu">
           
           <ul>
@@ -43,6 +44,46 @@
           <li class="menu-item"><a href="">Contact Us</a></li>
           
         </ul>
+        </div> 
+      </div> 
+       <!-- heeader right items -->
+       <div id="laptop-header" class="header-right">
+        <div class="box">
+          <a style="color: white;" href="index.html">Home</a>
+        </div>
+        <div class="box">
+          <a href="">About Us</a>
+        </div>
+  
+        <div class="box">
+          <a href="">Gallery</a>
+        </div>
+        <div class="box">
+          <a href="">Blog</a>
+        </div>
+        <div class="box">
+          <a href="">Achievements</a>
+        </div>
+        <div class="box">
+          <a href="">Projects</a>
+        </div>
+        <div class="box">
+          <a href="">Sponsors</a>
+        </div>
+        <div class="box">
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="box">
+          <a href="">Store</a>
+        </div>
+        <div class="box">
+          <a href="">Contributors</a>
+        </div>
+        <div class="box">
+          <a href="">Contact</a>
+        </div>
+        <div class="btn-box">
+          <button>Join Us</button>
         </div>
       </div>
     </nav>
@@ -89,27 +130,27 @@
         <div class="stat">
           <div class="stat-item">
             <div class="stats-number" data-target="50">0+</div>
-            <div>Active Team Members</div>
+            <div class="stat-details" >Active Team Members</div>
           </div>
           <div class="stat-item">
             <div class="stats-number"  data-target="5">0+</div>
-            <div>Subteams</div>
+            <div class="stat-details" >Subteams</div>
           </div>
           <div class="stat-item">
             <div class="stats-number" data-target="6">0</div>
-            <div>Sinhgad Campus Involved</div>
+            <div class="stat-details" >Sinhgad Campus Involved</div>
           </div>
           <div class="stat-item">
             <div class="stats-number" data-target="10">0+</div>
-            <div>Competition Played</div>
+            <div class="stat-details" >Competition Played</div>
           </div>
           <div class="stat-item">
             <div class="stats-number" data-target="15">0+</div>
-            <div>Robots Developed</div>
+            <div class="stat-details" >Robots Developed</div>
           </div>
           <div class="stat-item">
             <div class="stats-number" data-target="100">0+</div>
-            <div>Alumni Network</div>
+            <div class="stat-details" >Alumni Network</div>
           </div>
         </div>
       </div>
@@ -249,24 +290,41 @@
           </h1>
         </div>
         <div class="para">
-          <p>
+          <p style="text-align: center;">
             Sinhgad Institute, Ingenium Drives , Technobotix, Robu.in, Bosch,
             ElectronicsComp, robocraze, Anantam Aerials And Robotics, RC Mumbai,
             DJI, Autodesk
           </p>
         </div>
         <!-- slider -->
+        <div class="slider-container">
+          <div class="logo-slider">
+            <div class="logo"><img src="src/Assets/Partnership Logos/Sinhgad Institute Logo.png" alt="Logo 11"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/Bosch logo.png" alt="Logo 4"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/robo-safar-logo.png" alt="Logo 1"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/Autodesk Logo.jpg" alt="Logo 2"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/Autodesk Logo.png" alt="Logo 3"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/DJI Logo.png" alt="Logo 5"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/ElectronicsComp Logo.png" alt="Logo 6"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/Ingenium Drives Logo.png" alt="Logo 7"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/RC Mumbai Logo.png" alt="Logo 8"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/RoboCraze Logo.png" alt="Logo 9"></div>
+            <div class="logo"><img src="src/Assets/Partnership Logos/Robu.in Logo.jpg" alt="Logo 10"></div>
+            
+            <div class="logo"><img src="src/Assets/Partnership Logos/Technobotix Logo.png" alt="Logo 12"></div>
+          </div>
+        </div>
       </div>
     </section>
 <!-- footer -->
     <footer>
-      <div class="footer-container">
+      <div id="footer" class="footer-container">
       <div class="about-stes">
           <img src="src/Assets/stes-logo/Stes-logo.jpeg" alt="stes-logo">
         <p>
           STES Robotics isn't just a team, we are a movement forging a legacy where innovation meets purpose, and every robot we create tells a story of passion, teamwork, and vision for the future.
         </p>
-        <div class="copyright">
+        <div  class="copyright">
           <p>&copy; 2025 STES Robotics. All Rights Reserved.</p>
         </div>
       </div>
@@ -281,12 +339,12 @@
 <div class="footer-policies-items">
   <a href="faq.html"></a>FAQ</div>
       </div>
-      <div class="robo-safar">
+      <div id="robo-safar" class="robo-safar">
         <div class="robo-safar-img">
           <img src="src/Assets/robo-safar-logo/robo-safar-logo.png" alt="robo-safar-img">
         </div>
         <div class="join-us-btn">
-          <button>JOIN US</button>
+          <button  >JOIN US</button>
         </div>
         <div class="socials">
           <a href="#">
@@ -308,6 +366,10 @@
   <!-- STATNUMBER ANIMATION -->
   <script src="src/javascript/statnumber.js"></script>
 
-  <!-- <script src="javascript/trustslider.js"></script> -->
+  <!-- PARNTERSHIP LOGO SLIDER -->
+   <script src="src/javascript/partnerships-logos-slider.js"></script>
+
+   <!-- mediaquery -->
+    <script src="src/javascript/mediaquery.js"></script>
  
 </html>
