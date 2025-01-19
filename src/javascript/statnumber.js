@@ -1,5 +1,5 @@
 // counting animation
-let container = document.querySelector(".stat-item")
+let container = document.querySelector(".stat")
 container.addEventListener("mouseenter", () => {
     const counters = document.querySelectorAll(".stats-number");
   

@@ -27,7 +27,7 @@ function animateMenu(val1 , val2) {
       { transform: value2 }   // Ending state
     ],
     {
-      duration: 1000,  // 3 seconds
+      duration: 500,  // 3 seconds
       easing: "ease-out",
       fill: "forwards", // Ensures the animation stays at the final state
     }

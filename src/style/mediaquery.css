@@ -1,7 +1,8 @@
 @media (max-width: 768px) {
     .navbar {
-        height: 11vh;  /* Allow navbar height to adjust based on content */
+        height: auto;  /* Allow navbar height to adjust based on content */
         padding: 1rem;  /* Reduce padding if needed */
+        align-items: center;
     }
     .navbar .logo {
         margin-bottom: 1rem;  /* Add space between logo and other items */
@@ -115,11 +116,12 @@
         grid-template-columns: (2 , 1fr);  /* Stack grid items vertically */
         height: auto;  /* Let the height adjust dynamically */
         margin: 0.5rem;  /* Reduce margin for mobile */
+        align-items: center;
     }
 
-    .boxes-A .para, p {
+    .boxes-A .para , p {
         padding: 0.5rem;  /* Reduce padding inside boxes */
-        font-size: 0.4rem;  /* Adjust font size */
+        font-size: 0.6rem;  /* Adjust font size */
     }
 
     /* Adjust the images for mobile */
@@ -184,7 +186,8 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     .navbar {
         flex-direction: row;  /* Keep items in a row for tablet-sized screens */
-        height: 17vh;  /* Reduce height for medium screens */
+        height: auto;  /* Reduce height for medium screens */
+        align-items: center;
     }
     .header-left{
         align-items: center;
