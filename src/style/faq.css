@@ -100,19 +100,7 @@
   justify-content: space-around;
 }
 
-/* Nav-Bar styling */
-.header-right{
-  display: flex;
-  column-gap: 4rem;
-  margin: 0 70px;
-  font-size: 20px;  
-}
 
-
-.box:hover{
-  transform: scale(1.1);
-  transition: ease-in;
-}
 
 
 
