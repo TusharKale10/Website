@@ -1,0 +1,207 @@
+/*FAQ section styling  */
+      
+.faq-section {
+  /* max-width: 1000px; */
+  margin: 100px 100px;
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 1px solid aqua; */
+  box-shadow: 0 0 100px rgba(0, 255, 255, 0.5);
+}
+
+.first-head{
+  font-size: 45px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #201a1a;
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 1rem auto;
+  font-size: 20px;
+  font-weight: bold;
+  background: black;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  color: aqua;
+  border-bottom:1px solid aqua ;
+  border-left: 1px solid aqua;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.faq-question:hover {
+  background: black;
+  color: white;
+}
+
+.faq-question .arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  padding: 15px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  /* color: black; */
+  display: none;
+  background: linear-gradient(90deg, #744242, #078181);
+  color: white;
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.faq-answer.visible {
+  display: block;
+}
+
+.faq-question.active .arrow {
+  transform: rotate(180deg);
+}
+
+
+/* Sub-heading Button Stylng */
+.sub-headings .sub {
+  font-size: 20px;
+  margin: 50px;
+  padding: 15px 5px;
+  border-radius: 5px;
+  color: aqua;
+  background: black;
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.sub:hover {
+  color: white; /* Change text color on hover */
+  background: black; /* Change background color on hover */
+  border: 1px solid aqua; /* Optional border */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Initial subtle glow */
+  transform: scale(1.05); /* Slightly increase size without affecting layout */
+  
+}
+
+.sub-headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+
+
+/* Styling the mission section */
+.mission-text {
+  background-color: #000;
+  padding: 20px;
+  margin: 200px auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.mission-heading {
+  color: aqua;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+
+.mini-text{
+  font-size: 19px;
+  color: white;
+}
+
+.mission-ulist {
+  list-style-type: disc;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: inline-block;
+  /* text-align: left; */
+}
+
+.mission-list {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  list-style: none;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.Heading{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* ================================ */
+/* Medium screens (Tablets) */
+@media (max-width: 992px) {
+  .faq-item {
+    width: 100%; /* Stack items vertically */
+  }
+
+  .faq-section {
+    padding: 15px;
+  }
+}
+
+/* Small screens (Mobiles) */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .faq-item {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens (very small mobiles) */
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 10px;
+    width: fit-content; 
+    margin: 20px 5px;
+  
+  }
+
+  .sub-headings{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .faq-item {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+}
