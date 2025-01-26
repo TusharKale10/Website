@@ -40,6 +40,9 @@
         font-size: 0.9em;  /* Slightly reduce font size on mobile */
         padding: 0.8rem;   /* Reduce padding for smaller screens */
     }
+    a {
+        font-size: 0.8rem;
+    }
 
     .hidden-menu ul {
         padding: 0.5rem;  /* Reduce padding on mobile */
@@ -76,9 +79,15 @@
     .intro{
         font-size: 0.8rem;
     }
+    .intropara{
+        font-size: 0.8rem;
+    }
     .at-glance {
         width: 90%;  /* Increase the width to 90% for smaller screens */
         padding: 1rem;  /* Add some padding around */
+    }
+    .at-glance h3{
+        font-size: 1rem;
     }
 
     .stat {
@@ -101,6 +110,9 @@
     .stat-item:hover {
         transform: scale(1.1);  /* Slightly smaller scale effect on mobile */
     }
+    .stat-details {
+        font-size: 0.8rem;
+    }
     .header1 h1 {
         width: 95%;  /* Increase width to take up more space on smaller screens */
         font-size: 1rem;  /* Adjust font size for readability */
@@ -118,8 +130,12 @@
         margin: 0.5rem;  /* Reduce margin for mobile */
         align-items: center;
     }
+    .boxes-A p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
 
-    .boxes-A .para , p {
+    .boxes-A .para  p {
         padding: 0.5rem;  /* Reduce padding inside boxes */
         font-size: 0.6rem;  /* Adjust font size */
     }
@@ -132,7 +148,11 @@
     }
 
     .para h3 {
-        font-size: 0.7rem;  /* Adjust font size for smaller screens */
+        font-size: 0.9rem;  /* Adjust font size for smaller screens */
+    }
+    .para p{
+        text-align: center;
+         font-size: 0.8rem;
     }
     .footer-container {
        display: flex;
@@ -183,7 +203,7 @@
 }
 
 /* Media query for medium screens (e.g., tablets) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1025px) {
     .navbar {
         flex-direction: row;  /* Keep items in a row for tablet-sized screens */
         height: auto;  /* Reduce height for medium screens */
@@ -215,6 +235,10 @@
         font-size: 1em;  /* Set font size to 1em for tablets */
         padding: 0.9rem;  /* Adjust padding slightly */
     }
+    a {
+        font-size: 1rem;
+
+    }
 
     .hidden-menu ul {
         padding: 0.8rem;  /* Slightly reduce padding for tablets */
@@ -238,6 +262,9 @@
     .at-glance {
         width: 85%;  /* Slightly reduce width on tablets */
     }
+    .at-glance h3{
+        font-size: 1rem;
+    }
 
     .stat {
         width: 80%;  /* Adjust the width for tablet view */
@@ -256,6 +283,9 @@
 
     .stat-item:hover {
         transform: scale(1.1);  /* Slightly smaller scale effect */
+    }
+    .stat-details {
+        font-size: 0.8rem;
     }
     .header1 {
         margin: 3rem auto;
@@ -276,6 +306,10 @@
     .boxes-A {
         grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
     }
+    .boxes-A p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
 
     .boxes-A .para p {
         font-size: 1rem;
@@ -290,6 +324,10 @@
 
     .para h3 {
         font-size: 1.5rem;  /* Adjust font size for tablet screens */
+    }
+    .para p{
+        text-align: center;
+         font-size: 1rem;
     }
     .footer-container {
         grid-template-columns: 1.5fr 1fr ;

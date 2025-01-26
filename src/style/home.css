@@ -6,21 +6,25 @@ body{
     color:white;
     margin: 0;
 }
+.top-header{
+    margin: auto;
+    width: 90%;
+}
 .navbar{
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 0rem 1.7rem;
     height: auto;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
+    width: 90%;
+    background-color: rgba(23, 23, 23);
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
     position: fixed;
-    top: 0px;
+    top: 22px;
     z-index: 1000;
-    border-bottom: 1px solid aqua;
+    border-radius: 60px;
 }
 .header-left{
 display: flex;
@@ -39,22 +43,66 @@ align-items: center;
     column-gap: 2rem;
     align-items: center;
   }
-  .box:hover , .btn-box:hover{
+  .dropdown{
+    display: none;
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid aqua;
+    border-left: 1px solid aqua;
+    border-radius: 20px;
+    height: auto;
+  position: absolute;
+  top: 91px;
+  right: 54px;
+  transform: rotate();
+  }
+ .dropdown > div  {
+    padding: 1rem;
+    text-align: center;
+  }
+  .dropdown a{
+    font-size: 1.2rem;
+  }
+  /* more button */
+  .more-btn {
+    display: flex;
+    align-items: center;
+  }
+  .more-btn button{
+    background-color: rgba(23, 23, 23);
+    border:none;
+    color: aqua;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    
+  }
+  .more-btn img{
+    width: 25px;
+    height: auto;
+    
+  }
+
+  .box:hover , .btn-box:hover , .more-btn:hover{
     transform: scale(1.1);
     transition: all 0.1s ease;
   }
 
  a {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: aqua;
 } 
-.btn-box button{
-    background-color: rgb(0, 170, 0);
+a:hover{
     color: white;
+}
+.btn-box button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 0.7rem;
     border-radius: 10px;
-    font-size: medium;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .btn-box button:hover {
@@ -103,6 +151,7 @@ display: none;
     z-index: 1000;
     transition: all 2s ease-out;
 }
+
 .hidden-menu ul{
     padding: 1rem;
     display: flex;
@@ -135,8 +184,9 @@ display: none;
    margin-right: auto;
     padding: 2rem;
     background-color: rgb(40, 40, 40);
-    width: 90%;
+    width: 60%;
    border-radius: 12px ;
+   text-align: center;
 }
 .heading{
     margin: 1rem auto;
@@ -191,8 +241,12 @@ opacity: 1;
     opacity: 1;
     transform: translateY(0); /* Reset position */
   }
+  .intro{
+    font-size: 1.5rem;  
+  }
 .intropara{
     padding: 1rem 3rem;
+    font-size: 1.4rem;
 }
 .at-glance{
     width: 100%;
@@ -202,6 +256,7 @@ opacity: 1;
     margin: auto;
     text-align: center;
     color: aqua;
+    font-size: 2rem;
    
 }
 .stat{
@@ -216,8 +271,7 @@ opacity: 1;
 }
 .stat-item{
     justify-items: center;
-    /* background-color: rgb(30, 30, 30); */
-    /* border: 1px solid rgb(28, 28, 28); */
+    background-color: rgb(26, 26, 26);
     align-items: center;
     padding: 2rem 0rem;
     box-sizing: border-box;
@@ -225,8 +279,8 @@ opacity: 1;
     
 }
 .stat-item:hover{
-    border: 1px solid aqua;
-    box-shadow: 8px 7px 8px 0px aqua;
+    /* border: 1px solid aqua; */
+    /* box-shadow: 8px 7px 8px 0px aqua; */
     transform: scale(1.15);
     transition: all 0.5s ease-out;
 }
@@ -236,6 +290,9 @@ opacity: 1;
     padding: 0.5rem;
     color: aqua;
 }
+.stat-details{
+    font-size: 1.3rem;
+}
 
 /* WHO WE ARE  */
 .header1 {
@@ -243,11 +300,12 @@ opacity: 1;
     padding: 1rem;
 }
 .header1 h1{
-    margin: auto;
+    margin: 2.2rem auto;
     width: 80%;
     display: flex;
     column-gap: 0.8rem;
   justify-content: center;
+    font-size: 2.5rem;
 }
 .white{
     color: white;
@@ -271,16 +329,26 @@ margin-right: 0rem;
      grid-template-columns: repeat(2 , 1fr);
      gap: 2rem;
 }
+.boxes-A p {
+    font-size: 1.4rem;
+    text-align: center;
+}
 .boxes-A .para p{
     box-sizing: content-box;
     word-wrap: break-word;
-    text-align: justify;
+    text-align: center  ;
     align-self: center;
+    font-size: 1.4rem;
 }
 .para h3{
     display: flex;
     column-gap: 0.5rem;
     justify-content: center;
+    font-size: 1.6rem;
+}
+.para p{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .image{
@@ -352,6 +420,7 @@ justify-content: center;
 }
 .about-stes  p {
     text-align: left;
+    font-size: 1.3rem;
 }
 
 .about-stes img{
@@ -367,6 +436,10 @@ justify-content: center;
 .footer-menu h3 {
     width: 80%;
     border-bottom: 2px solid aqua;
+    font-size: 1.5rem;
+}
+.footer-menu-items{
+    font-size: 1.2rem;
 }
 .footer-menu-items:hover{
 border-bottom: 1px solid aqua;
@@ -381,6 +454,11 @@ transition: border-bottom 0.2s ease-out ;
 .footer-policies h3{
     width: 90%;
     border-bottom: 2px solid aqua;
+    font-size: 1.5rem;
+
+}
+.footer-policies-items{
+    font-size: 1.2rem;
 }
 .footer-policies-items:hover {
     border-bottom: 1px solid aqua;
@@ -405,7 +483,7 @@ transition: border-bottom 0.2s ease-out ;
     color: black;
     text-align: center;
     border-radius: 20px ;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 .socials{
