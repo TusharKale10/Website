@@ -7,11 +7,7 @@
   <title>Stes Robotics</title>
   <link rel="stylesheet" href="src/style/home.css" />
   <link rel="stylesheet" href="src/style/faq.css">
-
-
-
-
-
+  <link rel="stylesheet" href="src/style/mediaquery.css">
 
 </head>
 
@@ -20,55 +16,81 @@
   <nav class="navbar">
     <div class="header-left">
       <div class="box">
-        <img src="src/Assets/stes-logo/Stes-logo.jpeg" alt="stes_logo" />
+        <img id="stes-logo" style="width: 13vw; height: auto;" src="src/Assets/stes-logo/Stes-logo.jpeg"
+          alt="stes_logo" />
       </div>
       <div class="box">
-        <img style="width: 120px; height: 90px;" src="src/Assets/Partnership Logos/Sinhgad Institute Logo.png"
-          alt="sinhgad_logo" />
+        <img src="src/Assets/Partnership Logos/Sinhgad Institute Logo.png" alt="sinhgad_logo" />
       </div>
     </div>
-   <!-- heeader right items -->
-   <div class="header-right">
-    <div class="box">
-      <a style="color: white;" href="index.html">Home</a>
-    </div>
-    <div class="box">
-      <a href="">About Us</a>
-    </div>
 
-    <div class="box">
-      <a href="">Gallery</a>
-    </div>
-    <div class="box">
-      <a href="">Blog</a>
-    </div>
-    <div class="box">
-      <a href="">Achievements</a>
-    </div>
-    <div class="box">
-      <a href="">Projects</a>
-    </div>
-    <div class="box">
-      <a href="">Sponsors</a>
-    </div>
-    <div class="box">
-      <a href="faq.html">FAQ</a>
-    </div>
-    <div class="box">
-      <a href="">Store</a>
-    </div>
-    <div class="box">
-      <a href="">Contributors</a>
-    </div>
-    <div class="box">
-      <a href="">Contact</a>
-    </div>
-    <div class="btn-box">
-      <button>Join Us</button>
-    </div>
-  </div>
+    <!-- MENU FOR MOBILE -->
+    <div id="hidden-header" class="hidden-header-right">
 
+      <div id="menu-icon" class="menu-icon">
+        <img src="src/Assets/other-icons/menu.png" alt="menu">
+      </div>
 
+      <div id="hidden-menu" class="hidden-menu">
+
+        <ul>
+          <li class="exit-btn">
+            <div id="exit" class="exit">
+              <img src="src/Assets/other-icons/exit.png" alt="exit">
+            </div>
+          </li>
+          <li class="menu-item"><a href="">About us</a></li>
+          <li class="menu-item"><a href="">Gallery</a></li>
+          <li class="menu-item"><a href="">Blog</a></li>
+          <li class="menu-item"><a href="">Achievements</a></li>
+          <li class="menu-item"><a href="">Sponsors</a></li>
+          <li class="menu-item"><a href="">Store</a></li>
+          <li class="menu-item"><a href="faq.html">FAQ</a></li>
+          <li class="menu-item"><a href="">Contact Us</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- heeader right items -->
+    <div id="laptop-header" class="header-right">
+      <div class="box">
+        <a style="color: white;" href="index.html">Home</a>
+      </div>
+      <div class="box">
+        <a href="">About Us</a>
+      </div>
+
+      <div class="box">
+        <a href="">Gallery</a>
+      </div>
+      <div class="box">
+        <a href="">Blog</a>
+      </div>
+      <div class="box">
+        <a href="">Achievements</a>
+      </div>
+      <div class="box">
+        <a href="">Projects</a>
+      </div>
+      <div class="box">
+        <a href="">Sponsors</a>
+      </div>
+      <div class="box">
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="box">
+        <a href="">Store</a>
+      </div>
+      <div class="box">
+        <a href="">Contributors</a>
+      </div>
+      <div class="box">
+        <a href="">Contact</a>
+      </div>
+      <div class="btn-box">
+        <button>Join Us</button>
+      </div>
+    </div>
   </nav>
 
   <!-- PRINCIPAL IMAGE SECTION -->
@@ -88,12 +110,16 @@
   <!-- FAQ SECTION -->
   <section class="faq-section">
     <div class="sub-headings">
+      <div class="combine">
         <button class="sub" onclick="showSection('general-section')">General Question</button>
         <button class="sub" onclick="showSection('team-section')">Team Participation</button>
-        <button class="sub" onclick="showSection('events-section')">Competitions & Events</button>
-        <button class="sub" onclick="showSection('sponsorship-section')">Sponsorship & Support</button>
-        <button class="sub" onclick="showSection('miscellaneous-section')">Miscellaneous</button>
       </div>
+      <div class="combine">
+        <button class="sub" onclick="showSection('learning-section')">Learning & Growth</button>
+        <button class="sub" onclick="showSection('sponsorship-section')">Sponsorship & Support</button>
+      </div>
+     
+    </div>
 
     <div class="general-section section">
       <div class="faq-item">
@@ -104,26 +130,6 @@
         <div class="faq-answer">
           It is an institute-level Student Robotic Team under Sinhgad Institute, Pune. Mostly we participate in Robotics
           Challenges held on Local/state/national/international level.
-
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          Headquarters Location?
-          <span class="arrow">&#9660;</span>
-        </div>
-        <div class="faq-answer">
-          STES Robotics Worksop, Below Sinhgad Fitness Centre, Sinhgad Vadgaon-Ambegaon Campus, Vadgaon, Pune,
-          Maharashtra, India. </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          Who can join the STES Robotics team?
-          <span class="arrow">&#9660;</span>
-        </div>
-        <div class="faq-answer">
-          Students from Sinhgad Institutes in Pune (Vadgaon, Ambegaon, Warje, Narhe, Kondhwa campuses) can join the
-          team. Engineering, Management, and Polytechnic students are welcome!
         </div>
       </div>
       <div class="faq-item">
@@ -143,6 +149,30 @@
         <div class="faq-answer">
           Vision: To excel in robotics competitions, represent India globally, and inspire underprivileged students by
           showcasing innovation and empowering them to shape a future driven by robotics.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What competitions does STES Robotics participate in?
+
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+
+          Many Competitions throughout the country and will participate internationally too. Mainly focused on IIT’s
+          Technical fests, National Level Robotics Competitions and Championships, Local Level Competitions within
+          Maharashtra, Project Competitions and hackathons.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Does STES Robotics organize its own events or workshops?
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          The team manages Sinhgad Techtonic, Pune's biggest technical fest, and is planning national-level robotics
+          competitions with exciting prizes. We're also launching RoboSafar, a journey across India to explore robotics,
+          engage with students, participate in exhibitions, and inspire future robotics enthusiasts!
         </div>
       </div>
     </div>
@@ -196,34 +226,8 @@
       </div>
     </div>
 
-    <div class="events-section section" style="display: none;">
-      <div class="faq-item">
-        <div class="faq-question">
-          What competitions does STES Robotics participate in?
 
-          <span class="arrow">&#9660;</span>
-        </div>
-        <div class="faq-answer">
-
-          Many Competitions throughout the country and will participate internationally too. Mainly focused on IIT’s
-          Technical fests, National Level Robotics Competitions and Championships, Local Level Competitions within
-          Maharashtra, Project Competitions and hackathons.
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          Does STES Robotics organize its own events or workshops?
-          <span class="arrow">&#9660;</span>
-        </div>
-        <div class="faq-answer">
-          The team manages Sinhgad Techtonic, Pune's biggest technical fest, and is planning national-level robotics
-          competitions with exciting prizes. We're also launching RoboSafar, a journey across India to explore robotics,
-          engage with students, participate in exhibitions, and inspire future robotics enthusiasts!
-        </div>
-      </div>
-    </div>
-
-    <div class="sponsorship-section section" style="display: none;">
+    <div class="learning-section section" style="display: none;">
       <div class="faq-item">
         <div class="faq-question">
           What can I learn by being part of STES Robotics?
@@ -248,9 +252,41 @@
           founders, and many industrial visits will also happen along the way to give the members a hands-on experience.
         </div>
       </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Does the team conduct outreach programs or STES activities?
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          Yes
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Can school students collaborate with STES Robotics?
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          School students can collaborate with STES Robotics through outreach programs and workshops like RoboSafar. We
+          offer hands-on learning, training, and real-world projects to empower young minds and bridge the gap between
+          education and industry.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What makes STES Robotics unique?
+          <span class="arrow">&#9660;</span>
+        </div>
+        <div class="faq-answer">
+          STES Robotics blends innovation, teamwork, and social impact, bringing together diverse minds from Sinhgad
+          colleges. We aim to empower underprivileged students with robotics education and set benchmarks in
+          competitions, with a focus on creativity, leadership, and mentorship, all while striving to represent India
+          globally.
+        </div>
+      </div>
     </div>
 
-    <div class="Sponsorship-section section" style="display: none;">
+    <div class="sponsorship-section section" style="display: none;">
       <div class="faq-item">
         <div class="faq-question">
           How can I support STES Robotics as a sponsor?
@@ -284,40 +320,23 @@
           and empowering future innovators.
         </div>
       </div>
-    </div>
-
-
-    <div class="miscellaneous-section section"  style="display: none;">
       <div class="faq-item">
         <div class="faq-question">
-          Does the team conduct outreach programs or STEM activities?
+          Headquarters Location?
           <span class="arrow">&#9660;</span>
         </div>
         <div class="faq-answer">
-          Yes
-        </div>
+          STES Robotics Worksop, Below Sinhgad Fitness Centre, Sinhgad Vadgaon-Ambegaon Campus, Vadgaon, Pune,
+          Maharashtra, India. </div>
       </div>
       <div class="faq-item">
         <div class="faq-question">
-          Can school students collaborate with STES Robotics?
+          Who can join the STES Robotics team?
           <span class="arrow">&#9660;</span>
         </div>
         <div class="faq-answer">
-          School students can collaborate with STES Robotics through outreach programs and workshops like RoboSafar. We
-          offer hands-on learning, training, and real-world projects to empower young minds and bridge the gap between
-          education and industry.
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">
-          What makes STES Robotics unique?
-          <span class="arrow">&#9660;</span>
-        </div>
-        <div class="faq-answer">
-          STES Robotics blends innovation, teamwork, and social impact, bringing together diverse minds from Sinhgad
-          colleges. We aim to empower underprivileged students with robotics education and set benchmarks in
-          competitions, with a focus on creativity, leadership, and mentorship, all while striving to represent India
-          globally.
+          Students from Sinhgad Institutes in Pune (Vadgaon, Ambegaon, Warje, Narhe, Kondhwa campuses) can join the
+          team. Engineering, Management, and Polytechnic students are welcome!
         </div>
       </div>
     </div>
@@ -332,19 +351,19 @@
       sections.forEach((section) => {
         section.style.display = 'none';
       });
-  
+
       // Show the clicked section
       const selectedSection = document.querySelector(`.${sectionClass}`);
       selectedSection.style.display = 'block';
     }
-  
+
     // Initially show the general questions section when the page loads
     window.onload = () => {
       showSection('general-section');
     };
   </script>
 
-  <section>
+  <!-- <section>
     <div class="mission-text">
       <h1 class="mission-heading">Mission</h1>
       <p class="mini-text">
@@ -372,18 +391,13 @@
       </p>
 
     </div>
-  </section>
-
-
-
-
-
-
+  </section> -->
 
   </section>
+  
   <!-- footer -->
   <footer>
-    <div class="footer-container">
+    <div id="footer" class="footer-container">
       <div class="about-stes">
         <img src="src/Assets/stes-logo/Stes-logo.jpeg" alt="stes-logo">
         <p>
@@ -391,7 +405,9 @@
           robot we create tells a story of passion, teamwork, and vision for the future.
         </p>
         <div class="copyright">
-          <p>&copy; 2025 STES Robotics. All Rights Reserved.</p>
+          <p style="
+      font-size: 0.7rem;
+  ">© 2025 STES Robotics. All Rights Reserved.</p>
         </div>
       </div>
       <div class="footer-menu">
@@ -404,9 +420,11 @@
       <div class="footer-policies">
         <h3>POLICIES</h3>
         <div class="footer-policies-items">Privacy Policy</div>
-        <div class="footer-policies-items">FAQ</div>
+        <div class="footer-policies-items">
+          <a href="faq.html"></a>FAQ
+        </div>
       </div>
-      <div class="robo-safar">
+      <div id="robo-safar" class="robo-safar">
         <div class="robo-safar-img">
           <img src="src/Assets/robo-safar-logo/robo-safar-logo.png" alt="robo-safar-img">
         </div>
@@ -469,6 +487,7 @@
 <script src="src/javascript/home-animation.js"></script>
 <script src="src/javascript/statnumber.js"></script>
 <script src="src/javascript/faq.js"></script>
+<script src="src/javascript/mediaquery.js"></script>
 
 
 </html>
