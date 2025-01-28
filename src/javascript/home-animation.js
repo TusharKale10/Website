@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
             { transform: "scale(1.2)", borderRadius: "50%" } // Ending state
           ],
           {
-            duration: 2000, // 3 seconds
-            easing: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
+            duration: 500, // 1 seconds
+            easing: "ease",
             fill: "forwards", // Ensures the animation stays at the final state
           }
         );

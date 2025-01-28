@@ -1,7 +1,11 @@
 @media (max-width: 768px) {
+    .top-header {
+        padding: 1rem 0rem;
+        height: 11px;
+    }
     .navbar {
         height: auto;  /* Allow navbar height to adjust based on content */
-        padding: 1rem;  /* Reduce padding if needed */
+        padding: 0.6rem 1rem;  /* Reduce padding if needed */
         align-items: center;
     }
     .navbar .logo {
@@ -12,7 +16,7 @@
         align-items: center; /* Center items vertically on mobile */
     }
     .header-left img {
-        width: 90px;  /* Reduce image size on small screens */
+        width: 70px;  /* Reduce image size on small screens */
         height: auto;  /* Maintain aspect ratio */
     }
     .hidden-header-right {
@@ -117,6 +121,7 @@
         width: 95%;  /* Increase width to take up more space on smaller screens */
         font-size: 1rem;  /* Adjust font size for readability */
         padding: 0.5rem;  /* Reduce padding for mobile */
+        margin: 0.5rem;
     }
     .content-1 {
       margin: auto;
@@ -204,6 +209,10 @@
 
 /* Media query for medium screens (e.g., tablets) */
 @media (min-width: 769px) and (max-width: 1025px) {
+    .top-header {
+        padding: 1.2rem 0rem;
+        height: 117px;
+    }
     .navbar {
         flex-direction: row;  /* Keep items in a row for tablet-sized screens */
         height: auto;  /* Reduce height for medium screens */
@@ -294,7 +303,7 @@
     .header1 h1 {
         width: 90%;  /* Increase width slightly for tablet screens */
         font-size: 2rem;  /* Adjust font size for medium screens */
-        margin: 1rem auto;
+        margin: 1.2rem auto;
     }
     .content-1 {
         margin-left: 2rem;  /* Adjust left margin for tablet */

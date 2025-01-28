@@ -7,8 +7,16 @@ body{
     margin: 0;
 }
 .top-header{
-    margin: auto;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    height: 120px;
+    padding: 2rem 0rem;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
 }
 .navbar{
     box-sizing: border-box;
@@ -32,11 +40,10 @@ column-gap: 1rem;
 align-items: center;
 
 }
-.header-left img{
-    width:208px;
-    height: 107px;
+.header-left img {
+    width: 161px;
+    height: 125px;
 }
-
 /* Nav-Bar styling */
 .header-right{
     display: flex;
@@ -46,15 +53,13 @@ align-items: center;
   .dropdown{
     display: none;
     width: 250px;
-    background-color: rgb(0, 0, 0);
-    border-bottom: 1px solid aqua;
-    border-left: 1px solid aqua;
+    background-color: rgba(23, 23, 23);
     border-radius: 20px;
     height: auto;
   position: absolute;
   top: 91px;
   right: 54px;
-  transform: rotate();
+  box-shadow: -6px 10px 20px 2px black;
   }
  .dropdown > div  {
     padding: 1rem;
@@ -71,7 +76,7 @@ align-items: center;
   .more-btn button{
     background-color: rgba(23, 23, 23);
     border:none;
-    color: aqua;
+    color: white;
     font-size: 1.5rem;
     display: flex;
     gap: 4px;
@@ -81,21 +86,21 @@ align-items: center;
   .more-btn img{
     width: 25px;
     height: auto;
-    
   }
 
   .box:hover , .btn-box:hover , .more-btn:hover{
     transform: scale(1.1);
     transition: all 0.1s ease;
+
   }
 
  a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: aqua;
+    color: rgb(255, 255, 255);
 } 
 a:hover{
-    color: white;
+    color: aqua;
 }
 .btn-box button{
     background-color: rgb(255, 255, 255);

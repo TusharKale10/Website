@@ -35,7 +35,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 } // Trigger when 50% of the element is visible
+  { threshold: 0.9 } // Trigger when 90% of the element is visible
 );
 
 observer.observe(container);
