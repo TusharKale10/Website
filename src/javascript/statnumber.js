@@ -7,7 +7,7 @@ function animateCounters() {
 
   counters.forEach((counter) => {
     const target = +counter.getAttribute("data-target"); // Convert target to a number
-    const duration = 2000; // Duration of animation in milliseconds
+    const duration = 1000; // Duration of animation in milliseconds
     const startTime = performance.now(); // Animation start time
 
     function updateCounter(currentTime) {
