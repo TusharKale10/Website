@@ -1,12 +1,16 @@
 @media (max-width: 768px) {
     .top-header {
         padding: 1rem 0rem;
-        height: 110px;
+        height: auto;
+        width: 100%;
     }
     .navbar {
         height: auto;  /* Allow navbar height to adjust based on content */
         padding: 0.6rem 1rem;  /* Reduce padding if needed */
         align-items: center;
+        width: 100%;
+        border-radius: 0px;
+        top: 0px;
     }
     .navbar .logo {
         margin-bottom: 1rem;  /* Add space between logo and other items */
@@ -16,7 +20,7 @@
         align-items: center; /* Center items vertically on mobile */
     }
     .header-left img {
-        width: 70px;  /* Reduce image size on small screens */
+        width: 80px;  /* Reduce image size on small screens */
         height: auto;  /* Maintain aspect ratio */
     }
     .hidden-header-right {
