@@ -1,3 +1,25 @@
+// DROPDOWN
+let drop = document.getElementById("dropdown") //selects the dropdown div
+let more_btn = document.getElementById
+("more-btn")  //selets the more button
+
+let html1 = `More<img src="src/Assets/other-icons/up-arrow.png" alt="up-arrow">` //to add up arrow
+
+let html2 = `More<img id="arrow" src="src/Assets/other-icons/down-arrow.png" alt="down-arrow">`  //to add down arrow
+
+more_btn.addEventListener("click" , ()=>{
+  if(drop.style.display == "none")
+    {
+    drop.style.display = "block";  //makes visible after click
+    more_btn.innerHTML = html1 //change to up arrow
+    }
+      else
+      {
+        drop.style.display = "none"; //change to hidden
+        more_btn.innerHTML = html2 // makes the down arrow
+      }
+});
+
 // HIDDEN MENU ANIMATION
 let menu = document.getElementById("hidden-menu");
 let menu_icon = document.getElementById("menu-icon");
@@ -36,14 +58,12 @@ function animateMenu(val1 , val2) {
 
 
 // TAGLINE ANIMATION
-const words = [ "CREATORS 💡", "LEADERS 🏆", "CHANGEMAKERS ✨ ", "STES Robotians 🤖 "];
+const words = ["CREATORS 💡", "LEADERS 🏆", "CHANGEMAKERS ✨", "STES Robotians 🤖"];
 let index = 0;
 
 const wordElement = document.querySelector(".TAGLINE-aqua");
 
 function updateWord() {
-if(index != words.length) //stops after words end
-     {
   // Apply fade-out effect
   wordElement.classList.add("fade-out");
 
@@ -60,13 +80,13 @@ if(index != words.length) //stops after words end
       wordElement.classList.remove("fade-in");
     }, 500); // Match the CSS transition duration (0.5s)
 
-    // Move to the next word 
-   index = index + 1 ;
+    // Move to the next word, looping back to the start if at the end
+    index = (index + 1) % words.length;
   }, 500); // Match the CSS transition duration (0.5s)
-} 
 }
+
 // Start the animation loop
-setInterval(updateWord, 1500); // Update word every 2 seconds
+setInterval(updateWord, 1500); // Update word every 1.5 seconds
 
 // IMAGE ANMATION
 document.addEventListener("DOMContentLoaded", () => {
@@ -79,12 +99,12 @@ document.addEventListener("DOMContentLoaded", () => {
       box.addEventListener("mouseenter", () => {
         image.animate(
           [
-            { transform: "rotate(0deg)", borderRadius: "50%" }, // Starting state
-            { transform: "rotate(360deg)", borderRadius: "50%" } // Ending state
+            { transform: "scale(1)", borderRadius: "50%" }, // Starting state
+            { transform: "scale(1.2)", borderRadius: "50%" } // Ending state
           ],
           {
-            duration: 3000, // 3 seconds
-            easing: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
+            duration: 500, // 1 seconds
+            easing: "ease",
             fill: "forwards", // Ensures the animation stays at the final state
           }
         );

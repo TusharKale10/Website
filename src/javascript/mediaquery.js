@@ -5,7 +5,7 @@ const mediaQuery2 = window.matchMedia('(max-width: 1024px)');
 
 let html = `
       <div class="about-stes">
-          <img src="src/Assets/stes-logo/Stes-logo.jpeg" alt="stes-logo">
+          <img src="src/Assets/stes-logo/Stes-logo.png" alt="stes-logo">
         <p>
           STES Robotics isn't just a team, we are a movement forging a legacy where innovation meets purpose, and every robot we create tells a story of passion, teamwork, and vision for the future.
         </p>
@@ -16,7 +16,7 @@ let html = `
           <img src="src/Assets/robo-safar-logo/robo-safar-logo.png" alt="robo-safar-img">
         </div>
         <div class="join-us-btn">
-          <button  >JOIN US</button>
+          <button  >Apply Now</button>
         </div>
         <div class="socials">
           <a href="#">
