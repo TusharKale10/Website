@@ -121,6 +121,9 @@
     .stat-details {
         font-size: 0.8rem;
     }
+    .header1{
+        padding: 0rem;
+    }
     .header1 h1 {
         width: 95%;  /* Increase width to take up more space on smaller screens */
         font-size: 1rem;  /* Adjust font size for readability */
@@ -162,6 +165,12 @@
     .para p{
         text-align: center;
          font-size: 0.8rem;
+    }
+    .updates-container {
+        margin: auto;
+        padding: 0.5rem;
+        font-size: 11px;
+        font-weight: bold;
     }
     .footer-container {
        display: flex;

@@ -1,0 +1,8 @@
+.contact-container{
+    width: 80%;
+    height: auto;
+    background: red;
+}
+.contact-container input{
+    background: white;
+}

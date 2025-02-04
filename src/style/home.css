@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -200,6 +202,7 @@ display: none;
     text-align: center;
     display: flex;
     flex-direction: column;
+    border-radius: 24px;
 }
 .heading h2{
     display: flex;
@@ -216,7 +219,11 @@ display: none;
     flex-direction: row;
     column-gap: 0.5rem;
     justify-content: center ;
+    align-items: center;
     font-size: 3rem;
+    font-family: "Source Code Pro", serif;
+    font-weight: 500;
+    font-style: normal;
 }
  .TAGLINE-white{
     color: white;
@@ -252,6 +259,9 @@ opacity: 1;
 .intropara{
     padding: 1rem 3rem;
     font-size: 1.4rem;
+    font-family: "Source Code Pro", serif;
+    font-style: normal;
+    font-weight: bold;
 }
 .at-glance{
     width: 100%;
@@ -344,6 +354,7 @@ margin-right: 0rem;
     text-align: center  ;
     align-self: center;
     font-size: 1.4rem;
+    
 }
 .para h3{
     display: flex;
@@ -369,6 +380,17 @@ justify-content: center;
     position:relative;
  right:0%;
  
+}
+
+/* latest updates */
+.latest-updates{
+    text-align: center;
+}
+.updates-container{
+    margin: auto;
+    padding: 1rem;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 /* IN WE TRUST SLIDER */
@@ -409,6 +431,7 @@ justify-content: center;
 
 /* footer */
 .footer-container{
+    
     max-width: 100%;
     padding: 2rem;
    display: grid;
@@ -443,7 +466,7 @@ justify-content: center;
     border-bottom: 2px solid aqua;
     font-size: 1.5rem;
 }
-.footer-menu-items{
+.footer-menu-items a{
     font-size: 1.2rem;
 }
 .footer-menu-items:hover{
