@@ -221,6 +221,8 @@
   .faq-item {
     font-size: 12px;
     padding: 8px;
+    width: 95%;
+    margin: auto;
   }
 
   .faq-question {
