@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+
 html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background-color: black;
     color:white;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 .top-header{
     width: 100%;
@@ -259,9 +261,7 @@ opacity: 1;
 .intropara{
     padding: 1rem 3rem;
     font-size: 1.4rem;
-    font-family: "Source Code Pro", serif;
     font-style: normal;
-    font-weight: bold;
 }
 .at-glance{
     width: 100%;
@@ -391,6 +391,7 @@ justify-content: center;
     padding: 1rem;
     font-size: 22px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* IN WE TRUST SLIDER */

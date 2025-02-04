@@ -175,7 +175,7 @@
     .footer-container {
        display: flex;
        flex-direction: column;  /* Stack items vertically */
-       width: 500px;
+       /* width: 500px; */
     }
 
     .about-stes,
