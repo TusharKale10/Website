@@ -75,7 +75,7 @@ span{
       }
       .card {
         padding: 0.5rem;
-        gap: 0.5rem;
+        row-gap: 2rem;
         width: 60%;
         text-align: center;
         justify-content: center;
