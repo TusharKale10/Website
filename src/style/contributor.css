@@ -70,7 +70,7 @@ span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
       
       }
       .card {
@@ -81,6 +81,10 @@ span{
         justify-content: center;
         border-radius: 15px;
       }
+      .card:hover{
+        transform: scale(1.01);
+        box-shadow: -6px 10px 11px 0px aqua;
+    }
       .profile-pic {
         width: 100px;
         height: 100px;
