@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px; */
+    /* padding: 0px; */
     box-sizing: border-box;
 }
 
@@ -135,6 +135,8 @@ textarea {
     font-weight: bold;
 }
 
+
+
 /* Maps Container Styling */
 .location {
     display: flex;
@@ -196,6 +198,7 @@ iframe:hover {
         height: auto;
         max-width: 95%;
         padding: 20px;
+        
     }
     
     .location {
