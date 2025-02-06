@@ -79,7 +79,7 @@
 .sub-headings .sub {
   font-size: 20px;
   margin: 50px;
-  padding: 15px 5px;
+  padding: 15px 15px;
   border-radius: 5px;
   color: aqua;
   background: black;
@@ -104,7 +104,7 @@
 .sub-headings {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 
@@ -160,6 +160,15 @@
 
 
 /* ================================ */
+
+@media (max-width: 1024px) {
+  .sub-headings{
+    margin: 0px 60px;
+  }
+
+}
+
+
 /* Medium screens (Tablets) */
 @media (max-width: 992px) {
   .faq-item {
@@ -170,6 +179,8 @@
   .faq-section {
     padding: 15px;
   }
+
+  
 }
 
 /* Small screens (Mobiles) */
@@ -194,15 +205,15 @@
   .faq-section {
     padding: 10px;
     width: fit-content;
-    margin: 90px 10px;
-    
+    margin: 90px 3px;
 
   }
 
   .sub-headings {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
   }
+
 
   .faq-item {
     font-size: 12px;
@@ -214,10 +225,10 @@
   }
 
   .image-slider {
-    margin-right: 20px;
+    margin-right: 0px;
   }
 
   .Heading {
-    margin-left: 50px;
+    margin-left: 100px;
   }
 }

@@ -179,7 +179,7 @@ iframe:hover {
 .add-info {
     font-size: 1.4em;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 
@@ -278,8 +278,8 @@ iframe:hover {
     
     .location {
         gap: 2em;
-        margin: 0em 10px;
-        padding: 1.5em 2em;
+        margin: 0em 5px;
+        padding: 1.5em 1em;
         width: 100%;
         margin-bottom: 4em;
         
@@ -289,6 +289,10 @@ iframe:hover {
         height: 400px;
         width: 400px;
         
+    }
+
+    iframe:hover{
+        transform: scale(1);
     }
 
     .footer-container{

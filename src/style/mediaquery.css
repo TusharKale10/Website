@@ -343,9 +343,7 @@
         text-align: center;
          font-size: 1rem;
     }
-    .footer-container {
-        grid-template-columns: 1.5fr 1fr ;
-    }
+    
 
     .about-stes,
     .footer-menu,
