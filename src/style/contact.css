@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px; */
+    /* padding: 0px; */
     box-sizing: border-box;
 }
 
@@ -135,6 +135,8 @@ textarea {
     font-weight: bold;
 }
 
+
+
 /* Maps Container Styling */
 .location {
     display: flex;
@@ -179,23 +181,42 @@ iframe:hover {
 .add-info {
     font-size: 1.4em;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 
 /* Responsive Styling */
+
+@media (max-width: 1280px) {
+.map-box{
+    padding: 0px 45px;
+}
+iframe{
+    padding: 0px 40px;
+}
+
+h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+}
+
 @media (max-width: 1024px) {
     .container {
         height: auto;
         margin-top: 3rem;
         margin-bottom: 2rem;
         padding: 20px;
+        
     }
     
     .contact-box {
         height: auto;
         max-width: 95%;
         padding: 20px;
+        
+        
     }
     
     .location {
@@ -215,7 +236,8 @@ iframe:hover {
     .container {
         height: auto;
         padding: 15px;
-        margin-top: 2rem;
+        margin: 8rem auto;
+        background-size:660px ;
     }
     
     .contact-box {
@@ -238,7 +260,7 @@ iframe:hover {
     }
     
     .location {
-        margin: 0em 2em;
+        margin: 8em 2em;
         padding: 2em 0em;
     }
 }
@@ -278,8 +300,8 @@ iframe:hover {
     
     .location {
         gap: 2em;
-        margin: 0em 10px;
-        padding: 1.5em 2em;
+        margin: 0em 4px;
+        padding: 1.5em 1em;
         width: 100%;
         margin-bottom: 4em;
         
@@ -291,10 +313,26 @@ iframe:hover {
         
     }
 
+    iframe:hover{
+        transform: scale(1);
+    }
+
     .footer-container{
         width: 500px;
       
     }
-
     
 }
+
+@media (max-width: 400px) {
+    .container{
+      
+       background-size: 350px;
+       margin-left: 5px;
+    }
+
+    .location{
+       
+       margin-left: 1px;
+    }
+    }
