@@ -1,0 +1,215 @@
+header {
+    background-color: #222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin-top: 15rem;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 40px;
+    margin: 50px auto;
+    color: aqua;
+}
+
+h3{
+    font-size: 25px;
+}
+
+ul{
+    font-size:21px ;
+    margin: 10px 60px;
+}
+
+p{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo img {
+    max-height: 50px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#about-us {
+    padding: 20px;
+    margin: 0 90px;
+}
+
+.vision, .mission, .who-are-we, .our-work {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+#team h2, #technical-team h2, #non-technical-team h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+    margin: 60px 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.para{
+    font-size: 25px;
+    color: aqua;
+    margin-top: 10px;
+}
+
+.team-member img {
+    width: 250px ;
+    height: 250px ;  
+    border-radius: 50%;
+    object-fit: cover; /* Prevents image distortion */
+    background-color: #444; /* Placeholder background */
+    margin: 20px 0;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    
+}
+
+
+.same{
+    color: white;
+}
+
+
+.robot-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.robot-image {
+    text-align: center;
+    
+}
+
+.robot-image img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+/* Basic Mobile Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .robot-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .robot-image {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    h1{
+        margin-top: 5rem ;
+    }
+    h1 span {
+        font-size: 2.5rem;
+    }
+
+#about-us{
+    margin: 10px 5px;
+}
+
+.vision, .mission, .who-are-we, .our-work {
+    text-align: center;
+}
+h2{
+   font-size: 2rem ;
+}
+p{
+    font-size: 1.5rem;
+}
+
+ul{
+    text-align: left;
+    width: 80%;
+    margin: 0px 20px;
+}
+
+li{
+    margin: 10px;
+}
+
+.team-member{
+    margin: 20px auto;
+}
+
+#team h2, #technical-team h2, #non-technical-team h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+.robot-image img {
+    max-width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: black;
+}
+
+.copyright p{
+    font-size: 1rem;
+}
+}
