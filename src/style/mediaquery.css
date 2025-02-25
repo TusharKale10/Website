@@ -71,11 +71,18 @@
 
     .heading h1 {
         font-size: 2rem;  /* Reduce font size for mobile */
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .heading h1 div {
+        font-size: 1.8rem;  /* Reduce font size for mobile */
+        
     }
 
     .heading h2 {
-        font-size: 1.2rem;  /* Reduce font size for h2 on mobile */
-        column-gap: 10px;  /* Reduce column gap for better fit */
+        font-size: 2rem;  /* Reduce font size for h2 on mobile */
+        row-gap: 10px;  /* Reduce column gap for better fit */
+        flex-direction: column;
     }
     .TAGLINE-white {
       font-size: 1rem;
@@ -85,10 +92,11 @@
         font-size: 1rem;
     }
     .intro{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .intropara{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding: 1rem ;
     }
     .at-glance {
         width: 90%;  /* Increase the width to 90% for smaller screens */
