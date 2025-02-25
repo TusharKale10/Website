@@ -173,7 +173,7 @@
     }
     .para p{
         text-align: center;
-         font-size: 0.8rem;
+         font-size: 1rem;
     }
     .updates-container {
         margin: auto;
@@ -202,7 +202,7 @@
         height: auto;  /* Maintain aspect ratio */
     }
     .about-stes p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
