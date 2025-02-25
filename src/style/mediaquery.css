@@ -20,7 +20,7 @@
         align-items: center; /* Center items vertically on mobile */
     }
     .header-left img {
-        width: 80px;  /* Reduce image size on small screens */
+        width: 120px;  /* Reduce image size on small screens */
         height: auto;  /* Maintain aspect ratio */
     }
     .hidden-header-right {
@@ -30,7 +30,7 @@
     /* Adjust menu icon size on small screens */
     .menu-icon img {
         align-items: center;
-        width: 30px;
+        width: 40px;
         height: auto;
     }
     .exit img {
@@ -49,7 +49,7 @@
         padding: 0.8rem;   /* Reduce padding for smaller screens */
     }
     a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .hidden-menu ul {
@@ -71,11 +71,18 @@
 
     .heading h1 {
         font-size: 2rem;  /* Reduce font size for mobile */
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .heading h1 div {
+        font-size: 1.8rem;  /* Reduce font size for mobile */
+        
     }
 
     .heading h2 {
-        font-size: 0.8rem;  /* Reduce font size for h2 on mobile */
-        column-gap: 2px;  /* Reduce column gap for better fit */
+        font-size: 2rem;  /* Reduce font size for h2 on mobile */
+        row-gap: 10px;  /* Reduce column gap for better fit */
+        flex-direction: column;
     }
     .TAGLINE-white {
       font-size: 1rem;
@@ -85,17 +92,18 @@
         font-size: 1rem;
     }
     .intro{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .intropara{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding: 1rem ;
     }
     .at-glance {
         width: 90%;  /* Increase the width to 90% for smaller screens */
         padding: 1rem;  /* Add some padding around */
     }
     .at-glance h3{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .stat {
@@ -126,7 +134,7 @@
     }
     .header1 h1 {
         width: 95%;  /* Increase width to take up more space on smaller screens */
-        font-size: 1rem;  /* Adjust font size for readability */
+        font-size: 2rem;  /* Adjust font size for readability */
         padding: 0.5rem;  /* Reduce padding for mobile */
         margin: 0.5rem;
     }
@@ -137,34 +145,35 @@
 
     /* Adjust .boxes-A grid layout for mobile */
     .boxes-A {
-        grid-template-columns: (2 , 1fr);  /* Stack grid items vertically */
+        grid-template-columns: repeat(1 , 1fr);  /* Stack grid items vertically */
         height: auto;  /* Let the height adjust dynamically */
         margin: 0.5rem;  /* Reduce margin for mobile */
         align-items: center;
+        gap: 1rem;
     }
     .boxes-A p {
-        font-size: 0.5rem;
+        font-size: 1rem;
         text-align: center;
     }
 
     .boxes-A .para  p {
         padding: 0.5rem;  /* Reduce padding inside boxes */
-        font-size: 0.6rem;  /* Adjust font size */
+        font-size: 1.2rem;  /* Adjust font size */
     }
 
     /* Adjust the images for mobile */
     .image img {
-        width: 100%;  /* Make image responsive */
+        width: 65%;  /* Make image responsive */
         height: auto;  /* Keep the aspect ratio intact */
         max-width: 300px;  /* Set a max width for better scaling */
     }
 
     .para h3 {
-        font-size: 0.9rem;  /* Adjust font size for smaller screens */
+        font-size: 1.6rem;  /* Adjust font size for smaller screens */
     }
     .para p{
         text-align: center;
-         font-size: 0.8rem;
+         font-size: 1rem;
     }
     .updates-container {
         margin: auto;
@@ -172,6 +181,9 @@
         font-size: 11px;
         font-weight: bold;
     }
+    .logo {
+        flex: 0 0 100%;
+      }
     .footer-container {
        display: flex;
        flex-direction: column;  /* Stack items vertically */
@@ -194,7 +206,7 @@
         height: auto;  /* Maintain aspect ratio */
     }
     .about-stes p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
@@ -353,7 +365,10 @@
         text-align: center;
          font-size: 1rem;
     }
-    
+
+    .logo {
+        flex: 0 0 33.33%;
+      }
 
     .about-stes,
     .footer-menu,
