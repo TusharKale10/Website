@@ -251,7 +251,8 @@ span{
     padding: 0.5rem;
   }
   .header1 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+        margin: 3rem auto;
   }
   .contributor-container {
     width: 90%;
