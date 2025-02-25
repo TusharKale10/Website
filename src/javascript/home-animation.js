@@ -146,10 +146,7 @@ let who_we_are_html = `<div class="boxes-A">
   let what_we_do_html = `<div  id="para" class="boxes-A">
   <div class="image"><img id="img" src="src/Assets/what-we-do/We Build.png" alt="who we are 1" /></div>
             <div  class="para">
-              <h3>
-                <div class="white">We</div>
-                <div class="aqua">Build</div>
-              </h3>
+             
 
               <p style="text-align: center;">
                 We Build Our team designs and develops advanced robots,
@@ -164,10 +161,7 @@ let who_we_are_html = `<div class="boxes-A">
             <div class="image"><img src="src/Assets/what-we-do/We Compete.png" alt="who we are 2" /></div>
 
             <div class="para">
-              <h3>
-                <div class="white">We</div>
-                <div class="aqua">Compete</div>
-              </h3>
+             
 
               <p style="text-align: center;">
                 We participate in top robotics competitions, putting our
@@ -181,10 +175,7 @@ let who_we_are_html = `<div class="boxes-A">
           <div id="para" class="boxes-A">
           <div class="image"><img id="img" src="src/Assets/what-we-do/We Inspire.png" alt="who we are 2" /></div>
             <div class="para">
-              <h3>
-                <div class="white">We</div>
-                <div class="aqua">Inspire</div>
-              </h3>
+              
               <p style="text-align: center;">
                 We participate in top robotics competitions, putting our
                 engineering skills and teamwork to the test while striving for
@@ -197,10 +188,7 @@ let who_we_are_html = `<div class="boxes-A">
           <div class="boxes-A">
             <div class="image"><img src="src/Assets/what-we-do/We Collaborate.png" alt="who we are 2" /></div>
             <div class="para">
-              <h3>
-                <div class="white">We</div>
-                <div class="aqua">Collaborate</div>
-              </h3>
+            
               <p style="text-align: center;">
                 We participate in top robotics competitions, putting our
                 engineering skills and teamwork to the test while striving for
