@@ -112,3 +112,92 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// what we do $ who we are for mobile
+if (window.innerWidth < 768) {
+
+  let Who_content = document.getElementById("Who_we_are") ;
+  let what_content = document.getElementById("what-we-do");
+
+let who_we_are_html = `<div class="boxes-A">
+<div class="image"><img src="" alt="who we are 1" /></div>
+            <p>
+              A vibrant, unstoppable team of over 50 innovators from Sinhgad
+              colleges. United by passion and powered by creativity, we design,
+              build, and compete with groundbreaking robots that push the limits
+              of technology. From crafting bots like RoboSoccer champs, Maze
+              Solvers, and Sumo Warriors to leading Pune’s biggest tech fest,
+              Sinhgad Techtonic, we thrive on challenges and never back down.
+            </p>
+            
+          </div>
+          <div class="boxes-A">
+            <div class="image"><img src="" alt="who we are 2" /></div>
+
+            <p>
+              But we’re more than competitors, we’re educators and dreamers.
+              Through STEM outreach, we ignite young minds, spreading the spark
+              of robotics far and wide. Together, we’re not just building bots;
+              we’re building a future fueled by teamwork, dedication, and
+              boundless innovation.
+            </p>
+          </div>`;
+
+  let what_we_do_html = `<div  id="para" class="boxes-A">
+  <div class="image"><img id="img" src="src/Assets/what-we-do/We Build.png" alt="who we are 1" /></div>
+            <div  class="para">
+             
+
+              <p style="text-align: center;">
+                We Build Our team designs and develops advanced robots,
+                combining creativity and precision to tackle challenges in
+                robotics competitions and real-world applications.
+              </p>
+            </div>
+            
+          </div>
+          <!-- WE COMPARE -->
+          <div class="boxes-A">
+            <div class="image"><img src="src/Assets/what-we-do/We Compete.png" alt="who we are 2" /></div>
+
+            <div class="para">
+             
+
+              <p style="text-align: center;">
+                We participate in top robotics competitions, putting our
+                engineering skills and teamwork to the test while striving for
+                innovation and excellence.
+              </p>
+            </div>
+          </div>
+
+          <!-- WE INSPIRE -->
+          <div id="para" class="boxes-A">
+          <div class="image"><img id="img" src="src/Assets/what-we-do/We Inspire.png" alt="who we are 2" /></div>
+            <div class="para">
+              
+              <p style="text-align: center;">
+                We participate in top robotics competitions, putting our
+                engineering skills and teamwork to the test while striving for
+                innovation and excellence.
+              </p>
+            </div>
+            
+          </div>
+          <!-- WE COLLABORATE -->
+          <div class="boxes-A">
+            <div class="image"><img src="src/Assets/what-we-do/We Collaborate.png" alt="who we are 2" /></div>
+            <div class="para">
+            
+              <p style="text-align: center;">
+                We participate in top robotics competitions, putting our
+                engineering skills and teamwork to the test while striving for
+                innovation and excellence.
+              </p>
+            </div>
+          </div>
+        `;
+  what_content.innerHTML = what_we_do_html;
+  Who_content.innerHTML = who_we_are_html ;
+  console.log(content);
+}
