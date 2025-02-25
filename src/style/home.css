@@ -424,11 +424,6 @@ justify-content: center;
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  .logo {
-    flex: 0 0 50%; /* Show 2 logos per slide on smaller screens */
-  }
-}
 
 /* footer */
 .footer-container{

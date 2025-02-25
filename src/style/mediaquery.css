@@ -20,7 +20,7 @@
         align-items: center; /* Center items vertically on mobile */
     }
     .header-left img {
-        width: 80px;  /* Reduce image size on small screens */
+        width: 120px;  /* Reduce image size on small screens */
         height: auto;  /* Maintain aspect ratio */
     }
     .hidden-header-right {
@@ -30,7 +30,7 @@
     /* Adjust menu icon size on small screens */
     .menu-icon img {
         align-items: center;
-        width: 30px;
+        width: 40px;
         height: auto;
     }
     .exit img {
@@ -49,7 +49,7 @@
         padding: 0.8rem;   /* Reduce padding for smaller screens */
     }
     a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .hidden-menu ul {
@@ -181,6 +181,9 @@
         font-size: 11px;
         font-weight: bold;
     }
+    .logo {
+        flex: 0 0 100%;
+      }
     .footer-container {
        display: flex;
        flex-direction: column;  /* Stack items vertically */
@@ -190,6 +193,7 @@
     .about-stes,
     .robo-safar {
         align-items: center;
+        gap: 1rem;
     }
     .footer-menu , .footer-policies ,.robo-safar-img img{
         display: none;
@@ -361,7 +365,10 @@
         text-align: center;
          font-size: 1rem;
     }
-    
+
+    .logo {
+        flex: 0 0 33.33%;
+      }
 
     .about-stes,
     .footer-menu,
