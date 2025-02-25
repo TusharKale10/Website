@@ -181,6 +181,7 @@
     .about-stes,
     .robo-safar {
         align-items: center;
+        gap: 1rem;
     }
     .footer-menu , .footer-policies ,.robo-safar-img img{
         display: none;
@@ -217,7 +218,7 @@
     /* Adjust copyright text */
     .copyright {
        margin: auto;
-        font-size: small;
+        
     }
 }
 

@@ -136,7 +136,6 @@ textarea {
 }
 
 
-
 /* Maps Container Styling */
 .location {
     display: flex;
@@ -145,8 +144,8 @@ textarea {
     justify-content: center;
     gap: 5em;
     border: 1px solid cyan;
-    margin: 0em 10em;
-    margin-bottom: 10em;
+    margin:10em 10em;
+    /* margin-bottom: 10em; */
     padding: 5em 0em;
     border-radius: 2em;
     box-shadow: 0 0 100px rgba(0, 255, 255, 0.5);
@@ -310,6 +309,7 @@ h2{
     iframe{
         height: 400px;
         width: 400px;
+       
         
     }
 
@@ -335,4 +335,6 @@ h2{
        
        margin-left: 1px;
     }
+
+    
     }
