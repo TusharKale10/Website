@@ -64,7 +64,7 @@ nav a {
     padding-bottom: 20px;
 }
 
-#Subdomains,#technical-team {
+#Subdomains,#technical-team ,{
     width: 87%;
     margin: auto;
     margin-bottom: 20px;
@@ -277,11 +277,15 @@ p{
 .team-member{
     margin: 20px auto;
 }
+.team-member img {
+    width: 220px;
+    height: 220px;
+}
 
 #team h2, #technical-team h2, #non-technical-team h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 45px;
+    font-size: 2.2rem;
 }
 #Subdomains{
     flex-direction: column;
