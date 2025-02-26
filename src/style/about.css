@@ -58,10 +58,98 @@ nav a {
     margin: 0 90px;
 }
 
-.vision, .mission, .who-are-we, .our-work {
+.vision, .mission, .who-are-we, .our-work  {
     margin-bottom: 20px;
     border-bottom: 1px solid #444;
     padding-bottom: 20px;
+}
+
+#Subdomains,#technical-team {
+    width: 87%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+#Subdomains {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+   
+}
+
+.robot-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 70%;
+}
+
+.robot-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.robot-image {
+    background-color: rgb(34, 34, 34);
+    position: relative;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.robot-image:hover {
+    transform: scale(1.05);
+}
+
+.robot-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 1rem; /* Add some space between the card and the title */
+    font-weight: bold;
+    color: aqua;
+}
+
+.description-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.robot-image:hover .description-box {
+    opacity: 1;
+}
+
+.robot-image:hover img {
+    opacity: 0.2;
 }
 
 #team h2, #technical-team h2, #non-technical-team h2 {
@@ -97,7 +185,7 @@ nav a {
     height: 250px ;  
     border-radius: 50%;
     object-fit: cover; /* Prevents image distortion */
-    background-color: #444; /* Placeholder background */
+    background-color: #151515; /* Placeholder background */
     margin: 20px 0;
 }
 
@@ -111,23 +199,6 @@ nav a {
     color: white;
 }
 
-
-.robot-images {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.robot-image {
-    text-align: center;
-    
-}
-
-.robot-image img {
-    max-width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
 
 
 /* Basic Mobile Responsive Design */
@@ -146,21 +217,34 @@ nav a {
         align-items: center;
     }
 
-    .robot-images {
-        flex-direction: column;
-        align-items: center;
-    }
+   #Subdomains{
+    flex-direction: column;
+}
+.robot-images{
+    flex-direction: column;
+}
+/* .robot-image-container{
+    width: 80%;
+} */
+.robot-image{
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+}
+.card-title{
+    font-size: 1.2rem;
+}
+.description-box{
+    font-size: 1.2rem;
+}
 
-    .robot-image {
-        margin-bottom: 20px;
-    }
 }
 
 
 @media (max-width: 480px) {
 
     h1{
-        margin-top: 5rem ;
+        margin-top: 8rem ;
     }
     h1 span {
         font-size: 2.5rem;
@@ -189,20 +273,42 @@ p{
 .list li{
     margin: 10px;
 }
+.para{
+    font-size: 22px;
+}
 
 .team-member{
     margin: 20px auto;
+}
+.team-member img {
+    width: 220px;
+    height: 220px;
 }
 
 #team h2, #technical-team h2, #non-technical-team h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 45px;
+    font-size: 2.2rem;
 }
-.robot-image img {
-    max-width: 180px;
-    height: 180px;
-    border-radius: 50%;
+#Subdomains{
+    flex-direction: column;
+}
+.robot-images{
+    flex-direction: column;
+}
+/* .robot-image-container{
+    width: 80%;
+} */
+.robot-image{
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+}
+.card-title{
+    font-size: 1.2rem;
+}
+.description-box{
+    font-size: 1.2rem;
 }
 
 footer{

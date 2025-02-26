@@ -268,9 +268,9 @@ h2{
     .container {
         width: 100%;
         padding: 10px;
-        margin: 10em 10px;
+        margin: 10em auto 5em auto;
         background-size: 390px;
-        background-position-y: 200px ;
+        background-position-y: 216px ;
     }
     
     .contact-box {

@@ -64,7 +64,7 @@
         flex-direction: column;
         width: 90%;  /* Increase width on smaller screens */
         padding: 1rem;  /* Adjust padding */
-        /* margin: 2rem 6rem;  */
+        margin: 11rem auto 0rem auto; 
         align-items: center;  /* Ensure horizontal centering */
         justify-content: center;  /* Ensure vertical centering */
     }

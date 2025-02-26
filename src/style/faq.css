@@ -3,7 +3,7 @@
 .faq-section {
   /* max-width: 1000px; */
   margin: 100px 100px;
-  background: #272727f2;
+  background: #141414f2;
   padding: 20px;
   border-radius: 10px;
 }
@@ -34,11 +34,11 @@
   font-weight: bold;
   background: black;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: background 0.3s ease;
-  color: aqua;
-  border-bottom: 1px solid aqua;
-  border-left: 1px solid aqua;
+  color: white;
+  /* border-bottom: 1px solid aqua; */
+  /* border-left: 1px solid aqua; */
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -53,15 +53,15 @@
 }
 
 .faq-answer {
+  box-sizing: border-box;
   padding: 15px 15px;
   font-size: 22px;
-  font-weight: bold;
   /* color: black; */
   display: none;
   /* background: linear-gradient(90deg, #744242, #078181); */
-  background: #9fd7e2;
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
+  background: #383838;
+  color:white ;
+  border-radius: 15px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -79,7 +79,7 @@
   font-size: 23px;
   margin: 50px;
   padding: 15px 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   color: aqua;
   background: black;
   transition: all 0.3s ease;
@@ -213,11 +213,11 @@
 @media (max-width: 480px) {
   .first-head {
     font-size: 45px;
-    margin: 2rem 2rem auto auto;
+    margin: 5rem auto 0rem auto;
 }
   .faq-section {
     padding: 10px;
-    width: 93%;
+    /* width: 93%; */
     margin: 2rem 2rem;
     
 
@@ -227,8 +227,10 @@
     display: flex;
     flex-direction: row;  
   }
-
-
+  .sub{
+    border-radius: 30px ;
+  }
+ 
   .faq-item {
     font-size: 12px;
     padding: 8px;
@@ -239,6 +241,13 @@
   .faq-question {
     font-size: 14px;
   }
+
+  .faq-answer {
+    font-size: 18px;
+    display: none;
+   
+  }
+  
 
   .image-slider {
     margin-right: 0px;
