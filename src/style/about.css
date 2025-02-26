@@ -64,7 +64,7 @@ nav a {
     padding-bottom: 20px;
 }
 
-#Subdomains,#technical-team ,{
+#Subdomains,#technical-team {
     width: 87%;
     margin: auto;
     margin-bottom: 20px;
@@ -272,6 +272,9 @@ p{
 
 .list li{
     margin: 10px;
+}
+.para{
+    font-size: 22px;
 }
 
 .team-member{
