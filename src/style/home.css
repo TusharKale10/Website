@@ -481,7 +481,7 @@ transition: border-bottom 0.2s ease-out ;
     font-size: 1.5rem;
 
 }
-.footer-policies-items{
+.footer-policies-items a {
     font-size: 1.2rem;
 }
 .footer-policies-items:hover {
