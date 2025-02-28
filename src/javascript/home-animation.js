@@ -201,3 +201,9 @@ let who_we_are_html = `<div class="boxes-A">
   Who_content.innerHTML = who_we_are_html ;
   console.log(content);
 }
+
+// apply button
+let apply = document.getElementById("apply");
+apply.addEventListener('click' , ()=>{
+  alert(`SORRY...!! Recruitment process is closed now !!`)
+})
