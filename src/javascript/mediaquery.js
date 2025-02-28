@@ -16,16 +16,16 @@ let html = `
           <img src="src/Assets/robo-safar-logo/robo-safar-logo.png" alt="robo-safar-img">
         </div>
         <div class="join-us-btn">
-          <button  >Apply Now</button>
+          <button class="apply2" >Apply Now</button>
         </div>
         <div class="socials">
-          <a href="#">
+          <a href="https://www.youtube.com/channel/UCJ3my8s19_uZYK6goPZMV9A">
             <img src="src/Assets/social-icons/youtube.png" alt="youtube">
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/stesrobotics/">
             <img src="src/Assets/social-icons/instagram.png" alt="instagram">
           </a>
-          <a href="#"><img src="src/Assets/social-icons/linkedin.png" alt=""></a>
+          <a href="https://in.linkedin.com/company/stesrobotics"><img src="src/Assets/social-icons/linkedin.png" alt=""></a>
         </div>
         <div  class="copyright">
           <p>&copy; 2025 STES Robotics. All Rights Reserved.</p>
@@ -50,3 +50,11 @@ else if (mediaQuery2.matches) {
 
     document.getElementById("footer").innerHTML =  html
 }
+
+// apply button
+let apply2 = document.querySelectorAll(".apply2");
+apply2.forEach((Element) => {
+  Element.addEventListener("click", () => {
+    alert(`SORRY...!! Recruitment process is closed now !!`);
+  });
+});
